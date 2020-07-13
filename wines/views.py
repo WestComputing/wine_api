@@ -1,3 +1,5 @@
+import json
+
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
@@ -20,12 +22,15 @@ def wine_detail(request, wine_id):
 
 @csrf_exempt
 def new_wine(request):
+    data = json.load(request)
     if request.method == "POST":
-        form = WineForm(request.POST)
+        form = WineForm(data)
         if form.is_valid():
             wine = form.save(commit=True)
             serialized_wine = WineSerializer(wine).wine_detail
             return JsonResponse(data=serialized_wine, status=200)
+        else:
+            return JsonResponse(data={'Error': 'Record not created'}, status=500)
 
 
 @csrf_exempt

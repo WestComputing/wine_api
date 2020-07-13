@@ -117,6 +117,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CORS_ORIGIN_WHITELIST = ('westwine-react.herokuapp.com')
+CORS_ORIGIN_WHITELIST = ('westwine-react.herokuapp.com',)
 
 django_heroku.settings(locals())

@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@-$yxqljibh#mayr#)yu#w!geg=1+o91p-hy))twfxh)i44o5&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['westwine-react.herokuapp.com']
 CORS_ORIGIN_WHITELIST = ['http://westwine-react.herokuapp.com',
                          'https://westwine-react.herokuapp.com']
 

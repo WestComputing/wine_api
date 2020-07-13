@@ -25,11 +25,9 @@ SECRET_KEY = '@-$yxqljibh#mayr#)yu#w!geg=1+o91p-hy))twfxh)i44o5&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-CORS_ORIGIN_WHITELIST = ['westwine-react.herokuapp.com',
-                         'http://westwine-react.herokuapp.com',
-                         'https://westwine-react.herokuapp.com'
-                         ]
+ALLOWED_HOSTS = []
+CORS_ORIGIN_WHITELIST = ['http://westwine-react.herokuapp.com',
+                         'https://westwine-react.herokuapp.com']
 
 # Application definition
 

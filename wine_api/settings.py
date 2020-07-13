@@ -25,7 +25,7 @@ SECRET_KEY = '@-$yxqljibh#mayr#)yu#w!geg=1+o91p-hy))twfxh)i44o5&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['westwine-react.herokuapp.com']
 
 # Application definition
 

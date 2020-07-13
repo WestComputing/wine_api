@@ -26,7 +26,10 @@ SECRET_KEY = '@-$yxqljibh#mayr#)yu#w!geg=1+o91p-hy))twfxh)i44o5&'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CORS_ORIGIN_WHITELIST = 'westwine-react.herokuapp.com'
+CORS_ORIGIN_WHITELIST = ['westwine-react.herokuapp.com',
+                         'http://westwine-react.herokuapp.com',
+                         'https://westwine-react.herokuapp.com'
+                         ]
 
 # Application definition
 
@@ -118,6 +121,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
 
 django_heroku.settings(locals())
